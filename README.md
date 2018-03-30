@@ -1,1 +1,1 @@
-# sitewithjs
+# JavaScript. Уровень 1. Курс на GeekBrains

@@ -58,12 +58,12 @@ console.log(itog)
 */
 document.write('<h1>Урок 1</h1>');
 document.write('<p>Первое задание</p>');
-document.write('<p>'+Tf+'</p>');
+document.write('<p>' + Tf + '</p>');
 document.write('<p>Второе задание</p>');
-document.write('<p>'+"Число a =" + a + " Число b=" + b+'</p>');
+document.write('<p>' + "Число a =" + a + " Число b=" + b + '</p>');
 document.write('<p>Третье задание</p>');
-document.write('<p>'+"Переменная admin=" + admin+'</p>');
+document.write('<p>' + "Переменная admin=" + admin + '</p>');
 document.write('<p>Четвертое задание</p>');
-document.write('<p>'+itog+'</p>');
+document.write('<p>' + itog + '</p>');
 document.write('<p>Пятое задание</p>');
-document.write('<p>'+"Ответ на пятое задание смотреть в комментарии"+'</p>');
+document.write('<p>' + "Ответ на пятое задание смотреть в комментарии" + '</p>');

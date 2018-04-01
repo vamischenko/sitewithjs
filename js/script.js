@@ -56,8 +56,14 @@ console.log(itog)
 Много много много букв
 …То скрипт async.js выполнится, как только загрузится – возможно, до того, как весь документ готов. А defer.js подождёт готовности всего документа.
 */
+document.write('<h1>Урок 1</h1>');
+document.write('<p>Первое задание</p>');
 document.write('<p>'+Tf+'</p>');
+document.write('<p>Второе задание</p>');
 document.write('<p>'+"Число a =" + a + " Число b=" + b+'</p>');
+document.write('<p>Третье задание</p>');
 document.write('<p>'+"Переменная admin=" + admin+'</p>');
+document.write('<p>Четвертое задание</p>');
 document.write('<p>'+itog+'</p>');
+document.write('<p>Пятое задание</p>');
 document.write('<p>'+"Ответ на пятое задание смотреть в комментарии"+'</p>');

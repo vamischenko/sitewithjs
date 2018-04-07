@@ -89,7 +89,11 @@ function multiplication(a, b) {
 }
 
 function division(a, b) {
-    return a / b;
+    if (b==0) {
+        console.log("Делить на ноль нельзя")ж
+    } else {
+        return a / b;
+    }
 }
 
 //Задание 6

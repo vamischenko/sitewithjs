@@ -1,9 +1,13 @@
 // Задание 1
 var a = 1, b = 1, c, d;
-c = ++a; console.log(c); // 2
-d = b++; console.log(d); // 1
-c = (2+ ++a); console.log(c); // 5
-d = (2+ b++); console.log(d); // 4
+c = ++a;
+console.log(c); // 2
+d = b++;
+console.log(d); // 1
+c = (2 + ++a);
+console.log(c); // 5
+d = (2 + b++);
+console.log(d); // 4
 console.log(a); // 3
 console.log(b); // 3
 
@@ -25,18 +29,18 @@ console.log(x);
 var number1 = prompt("Введите первое число");
 var number2 = prompt("Введите второе число");
 
-if ((number1>0) && (number2>0)) {
-    alert(number1-number2);
-} else if ((number1<0) && (number2<0)) {
-    alert(number1*number2);
-} else if ((number1<0) && (number2>0)) {
-    alert(number1+number2);
-} else if ((number1>0) && (number2<0)) {
-    alert(number1+number2);
+if ((number1 > 0) && (number2 > 0)) {
+    alert(number1 - number2);
+} else if ((number1 < 0) && (number2 < 0)) {
+    alert(number1 * number2);
+} else if ((number1 < 0) && (number2 > 0)) {
+    alert(number1 + number2);
+} else if ((number1 > 0) && (number2 < 0)) {
+    alert(number1 + number2);
 }
 
 //Задание 4
-a = +prompt ('Введите число от 1 до 15');
+a = +prompt('Введите число от 1 до 15');
 switch (a) {
     case 0:
         console.log(0);
@@ -89,8 +93,9 @@ function multiplication(a, b) {
 }
 
 function division(a, b) {
-    if (b==0) {
-        console.log("Делить на ноль нельзя")ж
+    if (b == 0) {
+        console.log("Делить на ноль нельзя")
+        ж
     } else {
         return a / b;
     }
@@ -118,10 +123,10 @@ function mathOperation(agr1, arg2, operation) {
 }
 
 //Задание 7
-console.log( null > 0 ); // false, т.к. null преобразовано к 0
-console.log( null == 0 ); // false
+console.log(null > 0); // false, т.к. null преобразовано к 0
+console.log(null == 0); // false
 console.log(null >= 0); // true, т.к. null преобразовано к 0
-console.log( null === 0 ); // false, в стандарте явно указано, что null равен лишь undefined
+console.log(null === 0); // false, в стандарте явно указано, что null равен лишь undefined
 
 //Задание 8
 function power(val, pow) {

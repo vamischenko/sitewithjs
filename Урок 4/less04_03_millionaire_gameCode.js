@@ -5,8 +5,7 @@ do {
     answer = +prompt(works.a00 + works.a1 + works.a2 + works.a3 + works.a4 + '-1 - Забрать деньги');
     if (answer == -1) {
         break;
-    }
-    else {
+    } else {
         ok = isAnswer(works.a0, answer);
     }
 } while (!ok);
@@ -17,8 +16,7 @@ switch (answer) {
             answer = +prompt(works.b00 + works.b1 + works.b2 + works.b3 + works.b4 + '-1 - Забрать деньги');
             if (answer == -1) {
                 break;
-            }
-            else {
+            } else {
                 ok = isAnswer(works.b0, answer);
             }
         } while (!ok);
@@ -29,8 +27,7 @@ switch (answer) {
                     answer = +prompt(works.c00 + works.c1 + works.c2 + works.c3 + works.c4 + '-1 - Забрать деньги');
                     if (answer == -1) {
                         break;
-                    }
-                    else {
+                    } else {
                         ok = isAnswer(works.c0, answer);
                     }
                 } while (!ok);
@@ -41,8 +38,7 @@ switch (answer) {
                             answer = +prompt(works.d00 + works.d1 + works.d2 + works.d3 + works.d4 + '-1 - Забрать деньги');
                             if (answer == -1) {
                                 break;
-                            }
-                            else {
+                            } else {
                                 ok = isAnswer(works.d0, answer);
                             }
                         } while (!ok);
@@ -80,12 +76,10 @@ function isAnswer(q, answer) {
     if (isNaN(answer) || !isFinite(answer)) {
         alert('Вы ввели недопустимый символ');
         return false;
-    }
-    else if (answer < 1 || answer > q) {
+    } else if (answer < 1 || answer > q) {
         alert('Ваше число выходит из допустимого диапозона');
         return false;
-    }
-    else {
+    } else {
         return true;
     }
 }

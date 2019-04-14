@@ -45,12 +45,12 @@ function prepareGameField() {
     document.getElementById('snake-field').appendChild(gameTable);
 }
 
-function startGameHandler() { 
+function startGameHandler() {
     isGameStarted = true;
     respawn();
 
     snakeTimer = setInterval(move, SNAKE_SPEED);
-    var createApple = createFood('apple');    
+    var createApple = createFood('apple');
     setTimeout(createApple, 500);
 }
 
@@ -97,30 +97,30 @@ function move() {
 
     var i = 18;
     switch (direction) {
-        case 'top':            
-            if (snakeCoordX == 0){
-                newUnit = gameTable.children[FIELD_SIZE_X-1].children[snakeCoordY];
+        case 'top':
+            if (snakeCoordX == 0) {
+                newUnit = gameTable.children[FIELD_SIZE_X - 1].children[snakeCoordY];
                 snakeCoordX = FIELD_SIZE_X;
                 snakeCoordX--;
             } else newUnit = gameTable.children[--snakeCoordX].children[snakeCoordY];
             break;
-        case 'bottom':   
-            if(snakeCoordX == FIELD_SIZE_X-1){                
+        case 'bottom':
+            if (snakeCoordX == FIELD_SIZE_X - 1) {
                 newUnit = gameTable.children[0].children[snakeCoordY];
                 snakeCoordX = -1;
                 snakeCoordX++;
-            }else newUnit = gameTable.children[++snakeCoordX].children[snakeCoordY];
+            } else newUnit = gameTable.children[++snakeCoordX].children[snakeCoordY];
             break;
         case 'right':
-            if(snakeCoordY == FIELD_SIZE_Y-1){
+            if (snakeCoordY == FIELD_SIZE_Y - 1) {
                 newUnit = gameTable.children[snakeCoordX].children[0];
                 snakeCoordY = -1;
                 snakeCoordY++;
             } else newUnit = gameTable.children[snakeCoordX].children[++snakeCoordY];
             break;
         case 'left':
-            if (snakeCoordY == 0){
-                newUnit = gameTable.children[snakeCoordX].children[FIELD_SIZE_Y-1];
+            if (snakeCoordY == 0) {
+                newUnit = gameTable.children[snakeCoordX].children[FIELD_SIZE_Y - 1];
                 snakeCoordY = FIELD_SIZE_Y;
                 snakeCoordY--;
             } else newUnit = gameTable.children[snakeCoordX].children[--snakeCoordY];
@@ -152,15 +152,14 @@ function isFood(unit) {
         createFood('apple');
         createFood('mongoose');
         return true;
-    } else if (unit.classList.contains('mongoose-unit')){
+    } else if (unit.classList.contains('mongoose-unit')) {
         gameOver();
-    }
-    else {
+    } else {
         return false;
     }
 }
 
-function createFood(obj) {    
+function createFood(obj) {
     var foodCreated = false;
     var gameTable = document.getElementById('game-table');
 
@@ -172,7 +171,7 @@ function createFood(obj) {
 
         if (!foodCell.classList.contains('snake-unit')) {
             if (obj == 'apple') foodCell.classList.add('food-unit');
-            if (obj == 'mongoose') foodCell.classList.add('mongoose-unit');            
+            if (obj == 'mongoose') foodCell.classList.add('mongoose-unit');
             foodCreated = true;
         }
     }
@@ -185,8 +184,8 @@ function gameOver() {
     refreshGameHandler();
 }
 
-function addScore(score){
-    var totalScore=document.getElementById('total-score');
+function addScore(score) {
+    var totalScore = document.getElementById('total-score');
     totalScore.innerText = score;
 }
 

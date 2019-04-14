@@ -22,8 +22,9 @@ function objNumber(num) {
     }
 
     for (var i = props.length, ln = arrayNum.length; i--;) {
-        this[props[i]] = (+arrayNum[ln - i - 1])||0; // заменяем нулем значения, которые возвращают false, т.е. NaN заменяем на нуль
-    };
+        this[props[i]] = (+arrayNum[ln - i - 1]) || 0; // заменяем нулем значения, которые возвращают false, т.е. NaN заменяем на нуль
+    }
+    ;
 };
 
 var number = +prompt('Введите число от 0 до 999:', '');
